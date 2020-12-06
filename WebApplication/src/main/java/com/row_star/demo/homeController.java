@@ -10,10 +10,10 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class homeController {
 	@RequestMapping("home")
-	public ModelAndView home(@RequestParam("name") String Mname ,HttpSession session) {
+	public ModelAndView home(Alien alien) {
 		
 		ModelAndView mv = new ModelAndView();
-		mv.addObject("name",Mname);
+		mv.addObject("name",alien);
 		mv.setViewName("home");
 		return mv;
 	}

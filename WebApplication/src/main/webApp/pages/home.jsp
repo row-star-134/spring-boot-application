@@ -9,6 +9,6 @@
 <body>
  I am moving on spring boot framework from hibernate
  
- welcome to Application by  ${name}
+ welcome to Application by  ${name.aid} ${name.aname} ${name.lang}
 </body>
 </html>
